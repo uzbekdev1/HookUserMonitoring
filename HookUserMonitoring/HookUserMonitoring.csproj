@@ -119,7 +119,7 @@
     <Compile Include="HookManager.cs" />
     <Compile Include="HookManager`Structures.cs" />
     <Compile Include="HookManager`Windows.cs" />
-    <Compile Include="HookMouseEventExtArgs.cs" />
+    <Compile Include="HookMouseEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">

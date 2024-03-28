@@ -6,7 +6,7 @@ namespace HookUserMonitoring
     /// Provides data for the MouseClickExt and MouseMoveExt events. It also provides a property Handled.
     /// Set this property to <b>true</b> to prevent further processing of the event in other applications.
     /// </summary>
-    public class HookMouseEventExtArgs : MouseEventArgs
+    public class HookMouseEventArgs : MouseEventArgs
     {
         /// <summary>
         /// Initializes a new instance of the MouseEventArgs class. 
@@ -16,7 +16,7 @@ namespace HookUserMonitoring
         /// <param name="x">The x-coordinate of a mouse click, in pixels.</param>
         /// <param name="y">The y-coordinate of a mouse click, in pixels.</param>
         /// <param name="delta">A signed count of the number of detents the wheel has rotated.</param>
-        public HookMouseEventExtArgs(MouseButtons buttons, int clicks, int x, int y, int delta)
+        public HookMouseEventArgs(MouseButtons buttons, int clicks, int x, int y, int delta)
             : base(buttons, clicks, x, y, delta)
         { }
 
@@ -24,7 +24,7 @@ namespace HookUserMonitoring
         /// Initializes a new instance of the MouseEventArgs class. 
         /// </summary>
         /// <param name="e">An ordinary <see cref="MouseEventArgs"/> argument to be extended.</param>
-        internal HookMouseEventExtArgs(MouseEventArgs e) : base(e.Button, e.Clicks, e.X, e.Y, e.Delta)
+        internal HookMouseEventArgs(MouseEventArgs e) : base(e.Button, e.Clicks, e.X, e.Y, e.Delta)
         { }
 
         private bool m_Handled;

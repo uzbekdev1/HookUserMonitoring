@@ -142,7 +142,7 @@ namespace HookUserMonitoring
                 }
 
                 //generate event 
-                HookMouseEventExtArgs e = new HookMouseEventExtArgs(
+                HookMouseEventArgs e = new HookMouseEventArgs(
                                                    button,
                                                    clickCount,
                                                    mouseHookStruct.Point.X,

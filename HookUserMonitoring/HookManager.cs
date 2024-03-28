@@ -32,7 +32,7 @@ namespace HookUserMonitoring
             }
         }
 
-        private static event EventHandler<HookMouseEventExtArgs> s_MouseMoveExt;
+        private static event EventHandler<HookMouseEventArgs> s_MouseMoveExt;
 
         /// <summary>
         /// Occurs when the mouse pointer is moved. 
@@ -41,7 +41,7 @@ namespace HookUserMonitoring
         /// This event provides extended arguments of type <see cref="MouseEventArgs"/> enabling you to 
         /// supress further processing of mouse movement in other applications.
         /// </remarks>
-        public static event EventHandler<HookMouseEventExtArgs> MouseMoveExt
+        public static event EventHandler<HookMouseEventArgs> MouseMoveExt
         {
             add
             {
@@ -76,7 +76,7 @@ namespace HookUserMonitoring
             }
         }
 
-        private static event EventHandler<HookMouseEventExtArgs> s_MouseClickExt;
+        private static event EventHandler<HookMouseEventArgs> s_MouseClickExt;
 
         /// <summary>
         /// Occurs when a click was performed by the mouse. 
@@ -85,7 +85,7 @@ namespace HookUserMonitoring
         /// This event provides extended arguments of type <see cref="MouseEventArgs"/> enabling you to 
         /// supress further processing of mouse click in other applications.
         /// </remarks>
-        public static event EventHandler<HookMouseEventExtArgs> MouseClickExt
+        public static event EventHandler<HookMouseEventArgs> MouseClickExt
         {
             add
             {

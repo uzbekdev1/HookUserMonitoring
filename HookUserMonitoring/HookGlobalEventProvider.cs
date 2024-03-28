@@ -196,7 +196,7 @@ namespace HookUserMonitoring
         }
 
 
-        private event EventHandler<HookMouseEventExtArgs> m_MouseMoveExt;
+        private event EventHandler<HookMouseEventArgs> m_MouseMoveExt;
 
         /// <summary>
         /// Occurs when the mouse pointer is moved. 
@@ -205,7 +205,7 @@ namespace HookUserMonitoring
         /// This event provides extended arguments of type <see cref="MouseEventArgs"/> enabling you to 
         /// supress further processing of mouse movement in other applications.
         /// </remarks>
-        public event EventHandler<HookMouseEventExtArgs> MouseMoveExt
+        public event EventHandler<HookMouseEventArgs> MouseMoveExt
         {
             add
             {
@@ -226,7 +226,7 @@ namespace HookUserMonitoring
             }
         }
 
-        void HookManager_MouseMoveExt(object sender, HookMouseEventExtArgs e)
+        void HookManager_MouseMoveExt(object sender, HookMouseEventArgs e)
         {
             if (m_MouseMoveExt != null)
             {
@@ -234,7 +234,7 @@ namespace HookUserMonitoring
             }
         }
 
-        private event EventHandler<HookMouseEventExtArgs> m_MouseClickExt;
+        private event EventHandler<HookMouseEventArgs> m_MouseClickExt;
 
         /// <summary>
         /// Occurs when a click was performed by the mouse. 
@@ -243,7 +243,7 @@ namespace HookUserMonitoring
         /// This event provides extended arguments of type <see cref="MouseEventArgs"/> enabling you to 
         /// supress further processing of mouse click in other applications.
         /// </remarks>
-        public event EventHandler<HookMouseEventExtArgs> MouseClickExt
+        public event EventHandler<HookMouseEventArgs> MouseClickExt
         {
             add
             {
@@ -264,7 +264,7 @@ namespace HookUserMonitoring
             }
         }
 
-        void HookManager_MouseClickExt(object sender, HookMouseEventExtArgs e)
+        void HookManager_MouseClickExt(object sender, HookMouseEventArgs e)
         {
             if (m_MouseClickExt != null)
             {
