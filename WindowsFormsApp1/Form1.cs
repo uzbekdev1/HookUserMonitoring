@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-            _actHook = new UserActivityHook();
+            _actHook = new UserActivityHook(true, true);
         }
 
         private void Form1_Load(object sender, EventArgs e)
